@@ -1,7 +1,4 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/landing/" },
-    { "source": "/(.*)", "destination": "/landing/$1" }
-  ],
+  "rootDirectory": "landing",
   "cleanUrls": true
 }

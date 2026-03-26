@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/landing/" },
+    { "source": "/(.*)", "destination": "/landing/$1" }
+  ],
+  "cleanUrls": true
+}

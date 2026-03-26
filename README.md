@@ -167,3 +167,15 @@ We welcome your ideas and improvements! See [CONTRIBUTING.md](./CONTRIBUTING.md)
 ***
 
 Powerful, scalable agentic automations for the modern enterprise — with security, speed, and service at the core.
+
+## 🚀 Enhanced Landing Page (New)
+
+A modern enhanced website is included at `landing/` with animated UI/UX.
+
+Quick start:
+
+1. `cd landing`
+2. `npx serve .` (or use any static server like `python -m http.server 5500`)
+3. Open `http://localhost:3000` (or your port)
+
+This page includes hero animations, kit cards, and forms for fast better demos.

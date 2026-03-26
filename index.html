@@ -2,11 +2,151 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0;url=/landing/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecting...</title>
+    <title>AgentKit Advanced Landing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <p>Redirecting to <a href="/landing/">/landing/</a>...</p>
+  <body>curl -I https://kalpana-agentkit.vercel.app/
+    <header class="topbar" id="topbar">
+      <div class="container">
+        <a class="brand" href="#">AgentKit 2.0</a>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#kits">Kits</a>
+          <a href="#docs">Docs</a>
+          <a href="#contact" class="button">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <article>
+            <p class="eyebrow">Open Source · AI Agents · Build Fast</p>
+            <h1>Launch smarter AI workflows with AgentKit</h1>
+            <p>
+              Deploy agentic automations, assistants, embeddings, and process bots with modern UI/UX and real-time analytics.
+            </p>
+            <div class="hero-actions">
+              <a href="#kits" class="button primary">Explore Kits</a>
+              <a href="#docs" class="button secondary">Read Docs</a>
+            </div>
+            <div class="stats" id="stats">
+              <div>
+                <strong>500+</strong>
+                <span>Deployments</span>
+              </div>
+              <div>
+                <strong>24ms</strong>
+                <span>Average latency</span>
+              </div>
+              <div>
+                <strong>1200+</strong>
+                <span>Community stars</span>
+              </div>
+            </div>
+          </article>
+          <aside>
+            <div class="code-card" id="codeCard">
+              <pre><code>npm create next-app agentkit-site
+cd agentkit-site
+npm install
+npm run dev</code></pre>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="container">
+          <h2>Intelligent agent features</h2>
+          <p class="subtitle">Modern architecture with production-grade experience.</p>
+          <div class="cards">
+            <article class="card">
+              <h3>Agentic reasoning</h3>
+              <p>Reason over goals, plan actions, and execute lifecycle events with smart planners.</p>
+            </article>
+            <article class="card">
+              <h3>Human-friendly UI</h3>
+              <p>Built with responsive polished components and motion for modern interactions.</p>
+            </article>
+            <article class="card">
+              <h3>Pluggable integrations</h3>
+              <p>REST, webhooks, Slack, Notion, and more plug directly into agent workflows.</p>
+            </article>
+            <article class="card">
+              <h3>Realtime analytics</h3>
+              <p>Live logs, metrics, observability and drift detection out of the box.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="kits" class="section kits">
+        <div class="container">
+          <h2>Ready to deploy Agent Kits</h2>
+          <div class="kit-grid">
+            <article class="kit-card">
+              <h3>Deep Search</h3>
+              <p>Semantic search with vector index and advanced query planners.</p>
+            </article>
+            <article class="kit-card">
+              <h3>Generation</h3>
+              <p>Content and code generation agents that transform prompts into responses at scale.</p>
+            </article>
+            <article class="kit-card">
+              <h3>Hiring Automation</h3>
+              <p>Recruit workflow automation with screening, triage, and calendar scheduling.
+              </p>
+            </article>
+            <article class="kit-card">
+              <h3>Chat Embeds</h3>
+              <p>Drop-in embeddable chatbots in webpages with support for moderation and analytics.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="docs" class="section cta-block">
+        <div class="container cta-content">
+          <h2>Get started in under 5 minutes</h2>
+          <p>Take the fastest path to production with guided templates, docs, and a community-driven kit library.</p>
+          <div class="cta-actions">
+            <a href="#" class="button primary">Launch from GitHub</a>
+            <a href="#" class="button secondary">Open Documentation</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2>Let’s build your custom agent platform</h2>
+          <p>Copy this repo, tweak the theme, and scale with your brand.</p>
+          <form class="form" onsubmit="event.preventDefault(); createToast();">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Project vision (optional)"></textarea>
+            <button type="submit" class="button primary">Notify me</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 AgentKit - Enhanced UI by your developer. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast hidden">Thanks! You are on the list.</div>
+
+    <script src="script.js"></script>
   </body>
 </html>
